@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Poppins';
+  src:
+    url('./fonts/Poppins-Regular.woff2') format('woff2'),
+    url('./fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* ACTUAL CSS */
+
+body {
+  background: #111;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  font-family: Poppins, sans-serif;
+  color: whitesmoke;
+  background: #333;
+  border-bottom: 1px solid whitesmoke;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 40px;
+  user-select: none;
+}
+
+nav h2 {
+  transition-duration: 180ms;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sub-nav-container {
+  position: relative;
+  width: 100%;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: absolute;
+  top: 38px;
+  left: -20px;
+
+  background: #333;
+  width: fit-content;
+  padding: 10px 20px;
+  visibility: hidden;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.sub-menu > p {
+  text-shadow: 3px 3px 5px #111;
+  cursor: pointer;
+}
