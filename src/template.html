@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic User Interface Interactions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -40,6 +41,33 @@
     </nav>
 
   </header>
+
+  <main>
+    <div class="image-frame" id="imageFrame">
+      <div class="left-arrow" id="leftArrow"></div>
+      <div class="right-arrow" id="rightArrow"></div>
+      <div class="image-container" id="imageContainer">
+        <img src="./img/autumn.jpg" alt="autumn-image" width="1280px" height="853px">
+        <img src="./img/cat.jpg" alt="cat-image" width="1280px" height="853px">
+        <img src="./img/dog.jpg" alt="dog-image" width="1280px" height="853px">
+        <img src="./img/red-plum.jpg" alt="red-plum-image" width="1280px" height="853px">
+        <img src="./img/ural-owl.jpg" alt="owl-image" width="1280px" height="853px">
+      </div>
+
+
+    </div>
+    <div class="nav-circles-container" id="navCirclesContainer">
+      <div class="navigation-circles selected" id="autumnCircle"></div>
+      <div class="navigation-circles" id="catCircle"></div>
+      <div class="navigation-circles" id="dogCircle"></div>
+      <div class="navigation-circles" id="plumCircle"></div>
+      <div class="navigation-circles" id="owlCircle"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Images taken from <a href="https://pixabay.com/" target="_blank">pixabay</a>.</p>
+  </footer>
 
 </body>
 
